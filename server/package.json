@@ -1,0 +1,22 @@
+{
+  "name": "e3dad-khodam-portal-server",
+  "version": "0.0.1",
+  "description": "A student portal for E3dad Khodam @ St Mary Church - ElZeitoun",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader=ts-node/esm --env-file=.env --watch src/index.ts",
+    "build": "npx tsc",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "author": "MikhaelMounay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
